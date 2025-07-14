@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+
+
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+@theme{
+
+  --primary: #39BD39;
+  --secondary: #22C55E;
+  --main-color: #0aad0a;
+  --footer-color: #001e2b;
+}
+body{
+  /* overflow-x: hidden; */
+}
+
+
+body::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+  border-radius: 5px;
+  width: 4px;
+}
+body::-webkit-scrollbar{
+  width: 4px;
+
+}
+
+body{
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --secondary: #22C55E;
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+  --font-family: 'Encode Sans Expanded', sans-serif;
+  --rating-color: #ffc908;
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.product:hover {
+  box-shadow: var(--shadow);
+}
+
+
+
+
+
+.font-sm {
+  font-size: 14px;
+}
+
+
+
+
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) ;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+button{
+  @apply px-3.5 py-1.5 mx-1  rounded-lg bg-green-500 text-white hover:bg-green-600  ;
+  
+}
+.active{
+  color: var(--main-color);
+
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
