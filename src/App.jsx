@@ -17,7 +17,8 @@ const router = createBrowserRouter([
   ]}
   
   
-])
+],
+{basename: "/Freshcart-E-commerce-store/"})
 
 function App() {
 
