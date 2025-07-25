@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import navimg from "../images/freshcart-logo.svg"
-import Signin from "./Signin.jsx"
+import Signin from "../Auth/Signin";
 
 export default function () {
   const [isOpen, setIsOpen] = useState(false);

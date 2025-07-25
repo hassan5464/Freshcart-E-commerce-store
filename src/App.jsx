@@ -1,10 +1,8 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './assets/Componant/Layout';
-import Home from "./assets/Componant/Home";
-import Navbar from "./assets/Componant/Navbar";
-import Register from "./assets/Componant/Register";
-import Footer from "./assets/Componant/Footer";
+import Layout from './assets/Components/Layout';
+import Header from "./assets/Home/Header";
+import Register from "./assets/Auth/Register";
 
 
 
@@ -12,7 +10,7 @@ import Footer from "./assets/Componant/Footer";
 const router = createBrowserRouter([
   
   {path: "/", element: <Layout/>, children:[
-    {index: true , element: <Home/>},
+    {index: true , element: <Header/>},
     {path: "/register" , element: <Register />},
   ]}
   

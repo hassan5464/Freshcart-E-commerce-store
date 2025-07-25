@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import regImg from "../images/fp-g.svg";
 import axios from "axios";
-import TextPressure from "./TextPressure";
+import TextPressure from "../Components/TextPressure";
 
 export default function Register() {
   const [errorMessage, setErrorMessage] = useState(null);
@@ -72,7 +72,7 @@ export default function Register() {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center justify-around  py-24 my-4 ">
-        <h2 className="block mb-6 py-4 md:hidden text-center w-56  mx-auto  rounded-sm bg-[#001e2b] transition duration-150">
+        <h2 className="block mb-6 py-4 md:hidden text-center w-64  mx-auto  rounded-sm bg-[#001e2b] transition duration-150">
           {" "}
           <TextPressure
             text="Register"
