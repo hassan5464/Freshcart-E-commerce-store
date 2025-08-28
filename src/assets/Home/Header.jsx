@@ -49,16 +49,16 @@ export default function Header() {
   return (
     <>
       <header className="py-10 rounded-lg">
-        <Slider {... settings }>        
+        <Slider {... settings } >        
           {images.map((image, index) => {
           return (
-            <div key={index} className="relative px-2">
+            <div key={index} className="relative px-2 container">
               <img
                 className="rounded-lg w-full min-h-64"
                 src={image.image}
                 alt={image.header}
               />
-              <div className="absolute top-10 px-7 ">
+              <div className="absolute top-8 px-7 ">
                 <h3 className={` text-wrap  ${index === 1 ? "text-white": "text-(--footer-color)"} text-[34px] md:w-1/2  font-bold `}>
                   {index == 2 ? <p>Opening Sale Discount up to <span className="text-(--primary)">50%</span></p> : image.header}
                 </h3>
@@ -77,10 +77,6 @@ export default function Header() {
         })}
         </Slider>
       </header>
-      <sidebar></sidebar>
-      <section className="mt-12">
-          
-      </section>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './assets/Components/Layout';
-import Header from "./assets/Home/Header";
+import Home from "./assets/Home/Home";
 import Register from "./assets/Auth/Register";
 
 
@@ -10,7 +10,7 @@ import Register from "./assets/Auth/Register";
 const router = createBrowserRouter([
   
   {path: "/", element: <Layout/>, children:[
-    {index: true , element: <Header/>},
+    {index: true , element: <Home/>},
     {path: "/register" , element: <Register />},
   ]}
   
