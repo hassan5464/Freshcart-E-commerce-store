@@ -50,7 +50,7 @@ export default function Register() {
         .min(6, "Password must be at least 6 characters")
         .max(15, "Password must be at most 15 characters")
         .matches(
-          /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{5,15}$/,
+          /^([0-9]).{5,15}$/,
           "Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, one special character, no space, and it must be 6-15 characters long."
         ),
       rePassword: Yup.string()
