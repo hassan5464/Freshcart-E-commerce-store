@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-
-
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 
 @theme{
 
@@ -12,9 +9,7 @@
   --main-color: #0aad0a;
   --footer-color: #001e2b;
 }
-body{
-  /* overflow-x: hidden; */
-}
+
 
 
 body::-webkit-scrollbar-thumb{
@@ -78,9 +73,6 @@ a{
 }
 
 
-
-
-
 .bg-main {
   background-color: var(--main-color) !important;
 }
@@ -101,8 +93,11 @@ h2 {
 }
 
 button{
-  @apply px-3.5 py-1.5 mx-1  rounded-lg bg-green-500 text-white hover:bg-green-600  ;
+  @apply px-3.5 py-1.5 mx-1  rounded-lg bg-green-500 text-white hover:bg-(--primary) ;
   
+}
+button.arrow{
+  @apply w-8 h-8 rounded-full hover:bg-(--primary) duration-75 hover:text-white  flex justify-center items-center p-0 cursor-pointer  text-gray-500  bg-[#ECF0EF] ;
 }
 .active{
   color: var(--main-color);
