@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import regImg from "../images/fp-g.svg";
+import regImg from "/fp-g.svg";
 import axios from "axios";
 import TextPressure from "../Components/TextPressure";
 

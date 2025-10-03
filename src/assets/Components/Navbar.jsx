@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import navimg from "../images/freshcart-logo.svg"
+import navimg from "/freshcart-logo.svg"
 import Signin from "../Auth/Signin";
 
 export default function () {

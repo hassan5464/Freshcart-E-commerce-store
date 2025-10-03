@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import headerimg1 from "../images/headerimg1.jpg";
-import headerimg2 from "../images/headerimg2.jpg";
-import headerimg3 from "../images/headerimg3.jpg";
+import headerimg1 from "/headerimg1.jpg";
+import headerimg2 from "/headerimg2.jpg";
+import headerimg3 from "/headerimg3.jpg";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

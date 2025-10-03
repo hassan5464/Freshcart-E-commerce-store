@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerimg from "../images/deepseek.svg";
+import footerimg from "/deepseek.svg";
 
 export default function Footer() {
   return (
