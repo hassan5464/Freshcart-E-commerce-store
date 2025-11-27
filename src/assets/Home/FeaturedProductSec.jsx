@@ -65,7 +65,7 @@ const FeaturedProductSec = () => {
                   </button>
                   <button
                     ref={prevRef}
-                    className="arrow   "
+                    className="arrow "
                     >
                     <ChevronRight />
                   </button>
@@ -108,7 +108,7 @@ const FeaturedProductSec = () => {
             <div className="relative ">
               <img src={banner2} alt="grocery-banner" className="w-full boject-cover"/>
               <div className="absolute top-5 left-5">
-                <h2>Fruits & Vegetables</h2>
+                <h2 className="text-(1.5rem)">Fruits & Vegetables</h2>
                 <p>Get Upto 30% off</p>
                 <button className="!bg-(--footer-color) mt-3 text-[14px] cursor-pointer hover:opacity-70" type="button">
                   Shop Now

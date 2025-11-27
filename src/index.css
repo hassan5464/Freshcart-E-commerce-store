@@ -110,3 +110,11 @@ button.arrow{
   margin: 0 auto;
   padding: 0 30px;
 }
+
+
+
+
+
+.simple-star-rating {
+  display: inline-block !important;
+}
